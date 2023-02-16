@@ -1,0 +1,41 @@
+footer {
+  background-color: #001320;
+  display: block;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 0%;
+}
+hr {
+  width: 9rem;
+  background-color: #49c8a7;
+  margin: 0px auto;
+}
+/* icons styles */
+.fa-brands {
+  margin-right: 2rem;
+  margin-top: 1rem;
+  font-size: 28px;
+}
+
+.text {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  hr {
+    width: 7.8rem;
+  }
+
+  .fa-brands {
+    margin-right: 2rem;
+    margin-top: 1rem;
+    font-size: 22px;
+  }
+
+  .text {
+    font-size: 1.2rem;
+  }
+}

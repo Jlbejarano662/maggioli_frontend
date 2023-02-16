@@ -1,0 +1,95 @@
+/* all companies */
+.all_companies {
+  margin-top: 0;
+  padding: 2rem;
+  min-height: 75vh;
+  position: relative;
+  overflow: hidden;
+}
+
+h1 {
+ text-align: center;
+ margin-bottom: 0;
+}
+
+/* table with movie information */
+.table-responsive {
+  overflow-x: auto;
+}
+
+.table {
+  width: 90%;
+  margin: 50px auto auto auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+  min-width: 750px;
+  max-width: 1200px;
+}
+
+.table-head {
+  background: #001320;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.table-head > th {
+  color: #ffffff;
+  font-size: 1rem;
+  border-collapse: collapse;
+  border-spacing: 0;
+  padding: 0.7rem 0.5rem;
+  font-weight: normal;
+  text-align: center;
+}
+
+/* delete and edit actions */
+.table-body > td {
+  font-size: 1rem;
+  padding: 0.25rem;
+  border-bottom: 0.35px solid #000000;
+  text-align: left;
+}
+
+.table-body:hover {
+  background: #71779332;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+  min-width: 8rem;
+}
+
+.actions > .button {
+  padding: 5%;
+  background: #49c8a7;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  min-width: 20px;
+  max-width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.actions > .button.employees {
+  background: #e3e348;
+}
+
+.actions > .button.edit {
+  background: #49c8a7;
+}
+
+.actions > .button.delete {
+  background: #ef544a;
+}
+
+.actions > .button > .icon {
+  color: #ffffff;
+}
+
+
+
+
