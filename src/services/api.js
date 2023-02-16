@@ -2,6 +2,9 @@ import axios from "axios";
 
 const URL = "http://localhost:4000/api";
 
+// ------------------ COMPANIES -----------------------
+
+// get all companies 
 export const getCompanies = async () => {
   try {
     return await axios.get(`${URL}/companies`);
@@ -10,6 +13,7 @@ export const getCompanies = async () => {
   }
 };
 
+// delete one company
 export const deleteCompany = async (id) => {
   try {
     return await axios.delete(`${URL}/companies/${id}`);
@@ -18,6 +22,7 @@ export const deleteCompany = async (id) => {
   }
 };
 
+// add one company
 export const addCompany = async (company) => {
   try {
     return await axios.post(`${URL}/companies`, company);
@@ -26,6 +31,7 @@ export const addCompany = async (company) => {
   }
 };
 
+// get one company
 export const getCompany = async (id) => {
   try {
     return await axios.get(`${URL}/companies/${id}`);
@@ -34,6 +40,7 @@ export const getCompany = async (id) => {
   }
 };
 
+// update one company
 export const updateCompany = async (id, company) => {
   try {
     return await axios.put(`${URL}/companies/${id}`, company);
@@ -42,8 +49,9 @@ export const updateCompany = async (id, company) => {
   }
 };
 
+// ------------------ EMPLOYEES -----------------------
 
-
+// get all employees
 export const getEmployees = async (id) => {
   try {
     return await axios.get(`${URL}/employees/${id}`);
@@ -52,6 +60,7 @@ export const getEmployees = async (id) => {
   }
 };
 
+// get one employee
 export const getEmployee = async (id) => {
   try {
     return await axios.get(`${URL}/employees/employee/${id}`);
@@ -60,6 +69,7 @@ export const getEmployee = async (id) => {
   }
 };
 
+// delete one employee
 export const deleteEmployee = async (id) => {
   try {
     return await axios.delete(`${URL}/employees`, { data: { id } });
@@ -68,6 +78,7 @@ export const deleteEmployee = async (id) => {
   }
 };
 
+// update one employe
 export const updateEmployee = async (employee) => {
   try {
     return await axios.put(`${URL}/employees`, employee);
@@ -76,6 +87,7 @@ export const updateEmployee = async (employee) => {
   }
 };
 
+// add one employee
 export const addEmployee = async (idCompany, employee) => {
   try {
     return await axios.post(`${URL}/employees/${idCompany}`, employee);
